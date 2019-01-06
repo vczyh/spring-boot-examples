@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.vczyh</groupId>
-    <artifactId>spring-boot-examples</artifactId>
+    <artifactId>spring-boot-relational-data-access</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-examples</name>
+    <name>spring-boot-relational-data-access</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -27,6 +27,25 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!--为了注册暴露h2的控制台web访问接口-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <!--<scope>runtime</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
